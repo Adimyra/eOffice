@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:LM-{MM}{YY}-{####}",
+ "creation": "2024-12-31 16:41:58.794966",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "branch_name",
+  "letter_number",
+  "subject",
+  "column_break_vqog",
+  "reference_number",
+  "letter",
+  "section_break_wuzv",
+  "despatch",
+  "recepients"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch_name",
+   "fieldtype": "Select",
+   "label": "Branch Name",
+   "options": "\nStaff\nInvestigation\nMails\nMMU\nAccounts\nTechnology\nIR-VR"
+  },
+  {
+   "fieldname": "letter_number",
+   "fieldtype": "Data",
+   "label": "Letter Number"
+  },
+  {
+   "fieldname": "reference_number",
+   "fieldtype": "Data",
+   "label": "Reference Number"
+  },
+  {
+   "default": "0",
+   "fieldname": "despatch",
+   "fieldtype": "Check",
+   "label": "Despatch "
+  },
+  {
+   "fieldname": "column_break_vqog",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_wuzv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "recepients",
+   "fieldtype": "Table",
+   "label": "Recepients",
+   "options": "Recepient Child"
+  },
+  {
+   "fieldname": "letter",
+   "fieldtype": "Attach Image",
+   "label": "Letter (Optional)"
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Data",
+   "label": "Subject"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-12-31 17:54:22.396786",
+ "modified_by": "Administrator",
+ "module": "eOffice",
+ "name": "Letter Master",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
