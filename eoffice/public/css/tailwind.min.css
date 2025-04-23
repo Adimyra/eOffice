@@ -1,0 +1,2 @@
+/*! tailwindcss v4.1.3 | MIT License | https://tailwindcss.com */
+.container{width:100%}.mx-auto{margin-inline:auto}.block{display:block}.grid{display:grid}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.transition-shadow{transition-property:box-shadow;transition-timing-function:var(--tw-ease,ease);transition-duration:var(--tw-duration,0s)}

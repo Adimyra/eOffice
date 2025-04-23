@@ -1,0 +1,44 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:LM-{MM}{YY}-{####}",
+ "creation": "2025-01-02 17:22:41.391347",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "letter_number_copy",
+  "letter_number"
+ ],
+ "fields": [
+  {
+   "fetch_from": "letter_number_copy.letter_number",
+   "fieldname": "letter_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Letter Number",
+   "read_only": 1
+  },
+  {
+   "fieldname": "letter_number_copy",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Letter Master",
+   "options": "Letter Master"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-01-02 17:25:21.894691",
+ "modified_by": "Administrator",
+ "module": "eOffice",
+ "name": "Letter Master Child",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

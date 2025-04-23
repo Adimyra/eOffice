@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:T{YY}-{#####}",
+ "creation": "2025-01-01 12:19:31.316816",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "branch",
+  "start_date",
+  "column_break_spch",
+  "end_date",
+  "status",
+  "priority",
+  "section_break_ukqp",
+  "task_description"
+ ],
+ "fields": [
+  {
+   "fieldname": "branch",
+   "fieldtype": "Select",
+   "label": "Branch",
+   "options": "\nStaff\nInvestigation\nMails\nMMU\nAccounts\nTechnology\nIR-VR"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "column_break_spch",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Open\nWorking\nCompleted"
+  },
+  {
+   "fieldname": "section_break_ukqp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "task_description",
+   "fieldtype": "Small Text",
+   "label": "Task Description"
+  },
+  {
+   "fieldname": "priority",
+   "fieldtype": "Select",
+   "label": "Priority",
+   "options": "Medium\nHigh\nLow"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-01 14:35:21.265164",
+ "modified_by": "Administrator",
+ "module": "eOffice",
+ "name": "Task",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

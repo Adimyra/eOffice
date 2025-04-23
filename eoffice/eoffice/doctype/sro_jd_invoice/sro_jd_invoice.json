@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:JD-INV-{######}",
+ "creation": "2025-01-02 17:15:59.321286",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date_of_despatch",
+  "letter_numbers"
+ ],
+ "fields": [
+  {
+   "fieldname": "date_of_despatch",
+   "fieldtype": "Date",
+   "label": "Date of Despatch"
+  },
+  {
+   "fieldname": "letter_numbers",
+   "fieldtype": "Table",
+   "label": "Letter Numbers",
+   "options": "Letter Master Child"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-01-02 17:27:32.241599",
+ "modified_by": "Administrator",
+ "module": "eOffice",
+ "name": "SRO JD Invoice",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

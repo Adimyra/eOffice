@@ -1,11 +1,12 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:LM-{MM}{YY}-{####}",
+ "autoname": "naming_series:",
  "creation": "2024-12-31 16:41:58.794966",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "naming_series",
   "branch_name",
   "letter_number",
   "subject",
@@ -62,15 +63,22 @@
    "fieldname": "subject",
    "fieldtype": "Data",
    "label": "Subject"
+  },
+  {
+   "default": "L-.YY.-.MM.-.####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "L-.YY.-.MM.-.####"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-31 17:54:22.396786",
+ "modified": "2025-01-02 18:33:39.353450",
  "modified_by": "Administrator",
  "module": "eOffice",
  "name": "Letter Master",
- "naming_rule": "Expression",
+ "naming_rule": "By \"Naming Series\" field",
  "owner": "Administrator",
  "permissions": [
   {
@@ -82,6 +90,18 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "SA",
    "share": 1,
    "write": 1
   }
